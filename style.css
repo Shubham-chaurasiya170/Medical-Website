@@ -9,7 +9,7 @@
 }
 
 header {
-    background: url('img/headerbg.jpg') center/cover
+    background: url('img/headerbg.jpg') center/cover 
 }
 #navbarTogglerDemo01{
     height: 70px;
@@ -18,18 +18,29 @@ header {
 .mainLogo{
     height: 30px;
 }
+
+
 ul{
     font-size: 18px;
     font-weight: 600;
     gap: 20px;
     margin-left: 20px;
+    
+    
 }
-ul li .nav-link:hover{
-    background: var(--mavi);
-    color: white;
-    border-radius: 30px;
-    transition: all 0.5s;
+
+
+
+
+@media(min-width:768px){
+    ul li .nav-link:hover{
+        background: var(--mavi);
+        color: white;
+        border-radius: 30px;
+        transition: all 0.5s;
+    }
 }
+
 .card-body{
     position: relative;
     max-width: 7;
@@ -147,4 +158,39 @@ footer h5 {
 
 .bt5 {
     background: url("img/feature-5.jpg") center/cover;
+}
+@media (max-width:768px){
+
+    
+    ul li{
+        font-weight: 700;
+        
+        display: flex;
+        flex-direction: column;
+        /* background: var(--mavi); */
+         color: white;
+
+        border-radius: 30px;
+        width: 130px;
+        align-items: center;
+        text-align: center;
+        
+        transition: all 0.5s;
+        border-style: none;
+    } 
+    
+    ul li:active{
+        display: flex;
+        flex-direction: column;
+        /* background: var(--mavi); */
+        background-color: #1076fa;
+        color: white;
+        border-radius: 30px;
+        width: 127px;
+        align-items: center;
+        text-align: center;
+        
+        transition: 0.5s;
+        border-style: none;
+    }
 }
